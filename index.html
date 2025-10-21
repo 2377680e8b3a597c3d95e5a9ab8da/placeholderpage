@@ -4,17 +4,23 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>superKanzlei</title>
-  <!-- Aspekta von Fontshare -->
-  <link href="https://api.fontshare.com/v2/css?f[]=aspekta@150,700&display=swap" rel="stylesheet">
+
+  <!-- Aspekta lokal -->
   <style>
-    /* Lokale Young Serif einbinden */
     @font-face {
-      font-family: 'Young Serif';
-      src: url('YoungSerif-Regular.ttf') format('truetype');
-      font-weight: 400;
+      font-family: 'Aspekta';
+      src: url('fonts/AspektaVF.woff2') format('woff2');
+      font-weight: 100 900;
       font-style: normal;
     }
+  </style>
 
+  <!-- Young Serif von Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Young+Serif&display=swap" rel="stylesheet">
+
+  <style>
     html, body {
       height: 100%;
       margin: 0;
@@ -46,9 +52,11 @@
 
     .i {
       font-family: 'Young Serif', serif;
-      font-weight: 700;       /* fetter */
-      font-size: 1.15em;      /* etwas größer */
-      letter-spacing: -0.02em;
+      font-weight: 700;        /* fetter, wie gewünscht */
+      font-size: 1em;          /* gleiche Höhe wie "e" */
+      letter-spacing: -0.01em;
+      line-height: 1;          /* Grundlinie korrekt */
+      vertical-align: baseline;
     }
 
     @media (max-width: 600px) {
@@ -56,7 +64,7 @@
         font-size: 2.5rem;
       }
       .i {
-        font-size: 1.15em;
+        font-size: 1em;
       }
     }
   </style>
