@@ -4,8 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>superKanzlei</title>
-  <!-- Schriftarten von Fontshare -->
-  <link href="https://api.fontshare.com/v2/css?f[]=aspekta@150,700&f[]=young-serif@400&display=swap" rel="stylesheet">
+  <!-- Google Fonts als Ersatz -->
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;700&family=Merriweather:wght@400&display=swap" rel="stylesheet">
   <style>
     /* Grundlayout */
     html, body {
@@ -26,24 +26,23 @@
     }
 
     .super {
-      font-family: 'Aspekta', sans-serif;
-      font-weight: 150;
-      letter-spacing: -0.05em; /* -5% */
+      font-family: 'Raleway', sans-serif;
+      font-weight: 200; /* leichter Ersatz für Aspekta 150 */
+      letter-spacing: -0.05em;
     }
 
     .kanzlei {
-      font-family: 'Aspekta', sans-serif;
+      font-family: 'Raleway', sans-serif;
       font-weight: 700;
-      letter-spacing: -0.02em; /* -2% */
+      letter-spacing: -0.02em;
     }
 
     .i {
-      font-family: 'Young Serif', serif;
+      font-family: 'Merriweather', serif; /* Ersatz für Young Serif */
       font-weight: 400;
-      letter-spacing: -0.02em; /* -2% */
+      letter-spacing: -0.02em;
     }
 
-    /* Responsive kleinere Screens */
     @media (max-width: 600px) {
       h1 {
         font-size: 2.5rem;
