@@ -4,8 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>superKanzlei</title>
-  <!-- Google Fonts als Ersatz -->
-  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;700&family=Merriweather:wght@400&display=swap" rel="stylesheet">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;700&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
   <style>
     /* Grundlayout */
     html, body {
@@ -39,13 +39,17 @@
 
     .i {
       font-family: 'Merriweather', serif; /* Ersatz für Young Serif */
-      font-weight: 400;
+      font-weight: 700; /* jetzt fetter */
+      font-size: 1.1em; /* etwas größer */
       letter-spacing: -0.02em;
     }
 
     @media (max-width: 600px) {
       h1 {
         font-size: 2.5rem;
+      }
+      .i {
+        font-size: 1.1em; /* proportional zur kleineren H1 */
       }
     }
   </style>
