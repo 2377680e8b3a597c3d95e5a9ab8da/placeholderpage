@@ -4,9 +4,17 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>superKanzlei</title>
-  <!-- Schriftarten von Fontshare -->
-  <link href="https://api.fontshare.com/v2/css?f[]=aspekta@150,700&f[]=young-serif@400&display=swap" rel="stylesheet">
+  <!-- Aspekta von Fontshare -->
+  <link href="https://api.fontshare.com/v2/css?f[]=aspekta@150,700&display=swap" rel="stylesheet">
   <style>
+    /* Lokale Young Serif einbinden */
+    @font-face {
+      font-family: 'Young Serif';
+      src: url('YoungSerif-Regular.ttf') format('truetype');
+      font-weight: 400;
+      font-style: normal;
+    }
+
     html, body {
       height: 100%;
       margin: 0;
@@ -38,7 +46,7 @@
 
     .i {
       font-family: 'Young Serif', serif;
-      font-weight: 700;       /* jetzt fetter */
+      font-weight: 700;       /* fetter */
       font-size: 1.15em;      /* etwas größer */
       letter-spacing: -0.02em;
     }
