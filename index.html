@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>superKanzlei</title>
+  <link href="https://api.fontshare.com/v2/css?f[]=aspekta@150,700&f[]=young-serif@400&display=swap" rel="stylesheet">
+  <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+      background-color: #ffffff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .logo {
+      font-size: 4rem;
+      display: flex;
+      align-items: baseline;
+      color: #000;
+    }
+
+    .super {
+      font-family: 'Aspekta', sans-serif;
+      font-weight: 150;
+      letter-spacing: -0.05em;
+    }
+
+    .kanzlei {
+      font-family: 'Aspekta', sans-serif;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+    }
+
+    .i {
+      font-family: 'Young Serif', serif;
+      font-weight: 400;
+      letter-spacing: -0.02em;
+    }
+
+    @media (max-width: 600px) {
+      .logo {
+        font-size: 2.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="logo">
+    <span class="super">super</span>
+    <span class="kanzlei">Kanzle</span><span class="i">i</span>
+  </div>
+</body>
+</html>
